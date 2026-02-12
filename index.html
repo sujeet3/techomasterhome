@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techomaster | Professional Software Development Solutions</title>
+    <meta name="description"
+        content="Techomaster - Your trusted partner in software development, delivering innovative AI solutions and custom applications for business growth.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/webp" href="techomaster-logo.webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="techomaster-logo.webp" alt="Techomaster Logo" class="logo-img">
+                <span class="logo-text">Techomaster</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <h1 class="hero-title">
+                        Transform Your Vision Into
+                        <span class="gradient-text">Digital Reality</span>
+                    </h1>
+                    <p class="hero-description">
+                        Empowering businesses with cutting-edge software solutions, AI-driven technologies,
+                        and innovative digital transformation strategies that drive measurable growth.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            Get Started
+                            <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                        <a href="#portfolio" class="btn btn-secondary">
+                            View Our Work
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">100+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual" data-aos="fade-left">
+                    <div id="globe-container"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About Techomaster</h2>
+                <p class="section-description">
+                    We are a team of passionate developers, designers, and innovators dedicated to
+                    crafting exceptional digital experiences that transform businesses.
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="about-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path
+                                d="M20 5L25 15L35 16.25L27.5 23.75L29.5 35L20 29.375L10.5 35L12.5 23.75L5 16.25L15 15L20 5Z"
+                                fill="url(#gradient1)" stroke="currentColor" stroke-width="2" />
+                            <defs>
+                                <linearGradient id="gradient1" x1="20" y1="5" x2="20" y2="35">
+                                    <stop stop-color="#667eea" />
+                                    <stop offset="1" stop-color="#764ba2" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses worldwide with innovative software solutions that drive digital
+                        transformation and sustainable growth.</p>
+                </div>
+                <div class="about-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="about-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path
+                                d="M20 35C28.2843 35 35 28.2843 35 20C35 11.7157 28.2843 5 20 5C11.7157 5 5 11.7157 5 20C5 28.2843 11.7157 35 20 35Z"
+                                fill="url(#gradient2)" stroke="currentColor" stroke-width="2" />
+                            <path d="M20 13V20L25 25" stroke="white" stroke-width="2" stroke-linecap="round" />
+                            <defs>
+                                <linearGradient id="gradient2" x1="20" y1="5" x2="20" y2="35">
+                                    <stop stop-color="#f093fb" />
+                                    <stop offset="1" stop-color="#f5576c" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become a global leader in software development, recognized for excellence, innovation, and
+                        client satisfaction.</p>
+                </div>
+                <div class="about-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="about-icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M5 20L15 10V17.5H35V22.5H15V30L5 20Z" fill="url(#gradient3)" stroke="currentColor"
+                                stroke-width="2" />
+                            <defs>
+                                <linearGradient id="gradient3" x1="20" y1="10" x2="20" y2="30">
+                                    <stop stop-color="#4facfe" />
+                                    <stop offset="1" stop-color="#00f2fe" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Innovation, integrity, excellence, and client-centric approach are at the core of everything we
+                        do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">
+                    Comprehensive software development services tailored to meet your unique business needs.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card card-3d" data-aos="flip-left" data-aos-delay="100">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="8" y="8" width="32" height="32" rx="4" fill="url(#svc1)" opacity="0.2" />
+                                <path d="M16 20L24 14L32 20M16 28L24 34L32 28M24 14V34" stroke="url(#svc1)"
+                                    stroke-width="2.5" stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="svc1" x1="24" y1="8" x2="24" y2="40">
+                                        <stop stop-color="#667eea" />
+                                        <stop offset="1" stop-color="#764ba2" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Custom Software Development</h3>
+                    <p class="service-description">Tailored software solutions designed to meet your specific business
+                        requirements and drive efficiency.</p>
+                    <ul class="service-features">
+                        <li>Enterprise Applications</li>
+                        <li>Web Applications</li>
+                        <li>Mobile Apps (iOS & Android)</li>
+                    </ul>
+                </div>
+
+                <div class="service-card card-3d" data-aos="flip-left" data-aos-delay="200">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="24" r="16" fill="url(#svc2)" opacity="0.2" />
+                                <path d="M24 12V24L30 30" stroke="url(#svc2)" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                                <circle cx="24" cy="24" r="3" fill="url(#svc2)" />
+                                <defs>
+                                    <linearGradient id="svc2" x1="24" y1="8" x2="24" y2="40">
+                                        <stop stop-color="#f093fb" />
+                                        <stop offset="1" stop-color="#f5576c" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">AI & Machine Learning</h3>
+                    <p class="service-description">Leverage the power of artificial intelligence to automate processes
+                        and gain valuable insights.</p>
+                    <ul class="service-features">
+                        <li>Predictive Analytics</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision Solutions</li>
+                    </ul>
+                </div>
+
+                <div class="service-card card-3d" data-aos="flip-left" data-aos-delay="300">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="12" y="12" width="24" height="24" rx="3" fill="url(#svc3)" opacity="0.2" />
+                                <path d="M18 24H30M24 18V30" stroke="url(#svc3)" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="svc3" x1="24" y1="12" x2="24" y2="36">
+                                        <stop stop-color="#4facfe" />
+                                        <stop offset="1" stop-color="#00f2fe" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Cloud Solutions</h3>
+                    <p class="service-description">Scalable and secure cloud infrastructure to power your business
+                        operations globally.</p>
+                    <ul class="service-features">
+                        <li>Cloud Migration</li>
+                        <li>DevOps & CI/CD</li>
+                        <li>Infrastructure Management</li>
+                    </ul>
+                </div>
+
+                <div class="service-card card-3d" data-aos="flip-left" data-aos-delay="400">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 8L36 16V32L24 40L12 32V16L24 8Z" fill="url(#svc4)" opacity="0.2" />
+                                <path
+                                    d="M24 8L36 16M24 8L12 16M24 8V24M36 16V32M36 16L24 24M12 16V32M12 16L24 24M24 24V40M24 40L36 32M24 40L12 32"
+                                    stroke="url(#svc4)" stroke-width="2" stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="svc4" x1="24" y1="8" x2="24" y2="40">
+                                        <stop stop-color="#fa709a" />
+                                        <stop offset="1" stop-color="#fee140" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">Create stunning, user-centered designs that enhance engagement and
+                        drive conversions.</p>
+                    <ul class="service-features">
+                        <li>User Research</li>
+                        <li>Interface Design</li>
+                        <li>Prototyping & Testing</li>
+                    </ul>
+                </div>
+
+                <div class="service-card card-3d" data-aos="flip-left" data-aos-delay="500">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <rect x="10" y="14" width="28" height="20" rx="2" fill="url(#svc5)" opacity="0.2" />
+                                <path d="M10 20H38M16 14V20M32 14V20M14 26H22M14 30H18" stroke="url(#svc5)"
+                                    stroke-width="2.5" stroke-linecap="round" />
+                                <defs>
+                                    <linearGradient id="svc5" x1="24" y1="14" x2="24" y2="34">
+                                        <stop stop-color="#a8edea" />
+                                        <stop offset="1" stop-color="#fed6e3" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">E-Commerce Solutions</h3>
+                    <p class="service-description">Build powerful online stores with seamless shopping experiences and
+                        secure payment integration.</p>
+                    <ul class="service-features">
+                        <li>Custom E-Commerce Platforms</li>
+                        <li>Payment Gateway Integration</li>
+                        <li>Inventory Management</li>
+                    </ul>
+                </div>
+
+                <div class="service-card card-3d" data-aos="flip-left" data-aos-delay="600">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <circle cx="24" cy="20" r="8" fill="url(#svc6)" opacity="0.2" />
+                                <path
+                                    d="M24 12C19.6 12 16 15.6 16 20C16 24.4 24 36 24 36C24 36 32 24.4 32 20C32 15.6 28.4 12 24 12ZM24 23C22.3 23 21 21.7 21 20C21 18.3 22.3 17 24 17C25.7 17 27 18.3 27 20C27 21.7 25.7 23 24 23Z"
+                                    stroke="url(#svc6)" stroke-width="2" />
+                                <defs>
+                                    <linearGradient id="svc6" x1="24" y1="12" x2="24" y2="36">
+                                        <stop stop-color="#ff6b6b" />
+                                        <stop offset="1" stop-color="#feca57" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Consulting & Support</h3>
+                    <p class="service-description">Expert guidance and ongoing support to ensure your technology
+                        investments deliver maximum value.</p>
+                    <ul class="service-features">
+                        <li>Technology Consulting</li>
+                        <li>Maintenance & Support</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Explore our portfolio of successful projects that showcase our expertise and innovation.
+                </p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-card card-3d" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>AI-Powered Analytics Platform</h3>
+                            <p>Enterprise-grade analytics solution with ML capabilities</p>
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-tags">
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">Big Data</span>
+                        <span class="tag">Cloud</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card card-3d" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Modern online marketplace with advanced features</p>
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-tags">
+                        <span class="tag">E-Commerce</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card card-3d" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <div class="portfolio-overlay">
+                            <h3>Mobile Banking App</h3>
+                            <p>Secure and intuitive banking solution for iOS & Android</p>
+                            <a href="#" class="portfolio-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-tags">
+                        <span class="tag">Mobile</span>
+                        <span class="tag">FinTech</span>
+                        <span class="tag">Security</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Client Reviews</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">
+                    Don't just take our word for it - hear from our satisfied clients.
+                </p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonial-text">
+                        "Techomaster transformed our business with their innovative software solution.
+                        The team was professional, responsive, and delivered beyond our expectations."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <div class="author-name">John Doe</div>
+                            <div class="author-position">CEO, Tech Innovations Inc.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonial-text">
+                        "Outstanding work! The AI solution they developed has increased our efficiency by 40%.
+                        Highly recommend Techomaster for any software development needs."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SS</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Smith</div>
+                            <div class="author-position">CTO, Global Solutions Ltd.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonial-text">
+                        "Exceptional quality and attention to detail. The team at Techomaster truly
+                        understands modern software development and delivered a product we're proud of."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <div class="author-name">Michael Johnson</div>
+                            <div class="author-position">Director, Enterprise Systems</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Ready to start your next project? Contact us today for a free consultation.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M3 8L10.89 13.26C11.23 13.48 11.61 13.59 12 13.59C12.39 13.59 12.77 13.48 13.11 13.26L21 8M5 19H19C20.1 19 21 18.1 21 17V7C21 5.9 20.1 5 19 5H5C3.9 5 3 5.9 3 7V17C3 18.1 3.9 19 5 19Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>info@techomaster.com</p>
+                        <p>support@techomaster.com</p>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>+1 (555) 123-4567</p>
+                        <p>+1 (555) 987-6543</p>
+                    </div>
+
+                    <div class="contact-card glass-card">
+                        <div class="contact-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.02944 7.02944 1 12 1C16.9706 1 21 5.02944 21 10Z"
+                                    stroke="currentColor" stroke-width="2" />
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>123 Innovation Street</p>
+                        <p>Tech City, TC 12345</p>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message
+                        <svg class="btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M18 2L9 11M18 2L12 18L9 11M18 2L2 8L9 11" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Common Questions</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">
+                    Find answers to common questions about our services and process.
+                </p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>What services do you specialize in?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We specialize in custom software development, AI & Machine Learning solutions, cloud
+                            infrastructure, mobile app development (iOS & Android), and enterprise web applications. Our
+                            team tailors each solution to meet specific business needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>How do you ensure project security and confidentiality?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Security is our top priority. We sign NDAs (Non-Disclosure Agreements) before starting any
+                            project. We follow industry-standard security practices, including secure coding, data
+                            encryption, and regular security audits to protect your intellectual property.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>What is your typical development process?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We follow an Agile development methodology. This includes requirements gathering, planning,
+                            design, development, testing, and deployment. We maintain transparent communication with
+                            regular updates and demos throughout the project lifecycle.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>Do you provide post-launch support and maintenance?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer comprehensive post-launch support and maintenance packages. This ensures your
+                            software remains up-to-date, secure, and performs optimally. We handle bug fixes, updates,
+                            and feature enhancements as needed.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-question">
+                        <h3>How long does it take to complete a project?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The timeline varies depending on the project's complexity and scope. A simple application
+                            might take 4-8 weeks, while a complex enterprise solution could take 3-6 months or more. We
+                            provide a detailed timeline during the initial consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="techomaster-logo.webp" alt="Techomaster Logo" class="footer-logo-img">
+                        <span class="logo-text">Techomaster</span>
+                    </div>
+                    <p class="footer-description">
+                        Transforming businesses through innovative software solutions and cutting-edge technology.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M4.5 3C3.67 3 3 3.67 3 4.5V15.5C3 16.33 3.67 17 4.5 17H15.5C16.33 17 17 16.33 17 15.5V4.5C17 3.67 16.33 3 15.5 3H4.5ZM6.5 5.5C7.05 5.5 7.5 5.95 7.5 6.5C7.5 7.05 7.05 7.5 6.5 7.5C5.95 7.5 5.5 7.05 5.5 6.5C5.5 5.95 5.95 5.5 6.5 5.5ZM5.5 8.5H7.5V14.5H5.5V8.5ZM9.5 8.5H11.5V9.3C11.8 8.8 12.5 8.4 13.3 8.4C15 8.4 15.5 9.5 15.5 11.2V14.5H13.5V11.5C13.5 10.7 13.3 10.2 12.6 10.2C11.8 10.2 11.5 10.8 11.5 11.5V14.5H9.5V8.5Z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M17.316 6.246c.01.219.01.438.01.657 0 6.687-5.096 14.396-14.396 14.396A14.267 14.267 0 0 1 .93 19.681a10.5 10.5 0 0 0 1.219.063c2.385 0 4.578-.813 6.32-2.177a5.065 5.065 0 0 1-4.724-3.505c.313.062.626.094.947.094.438 0 .875-.063 1.282-.167a5.056 5.056 0 0 1-4.047-4.953v-.063a5.07 5.07 0 0 0 2.282.626A5.052 5.052 0 0 1 2.645 3.73a14.362 14.362 0 0 0 10.409 5.283 5.716 5.716 0 0 1-.125-1.156 5.053 5.053 0 0 1 8.738-3.454 9.94 9.94 0 0 0 3.204-1.219 5.04 5.04 0 0 1-2.219 2.782 10.124 10.124 0 0 0 2.907-.782 10.86 10.86 0 0 1-2.532 2.594z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M10 0C4.475 0 0 4.475 0 10c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 10 4.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C17.137 18.165 20 14.418 20 10c0-5.525-4.475-10-10-10z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="#about">About Us</a>
+                        <a href="#services">Services</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#services">Custom Software</a>
+                        <a href="#services">AI Solutions</a>
+                        <a href="#services">Cloud Services</a>
+                        <a href="#services">Consulting</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="#">Blog</a>
+                        <a href="#">Case Studies</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Techomaster. All rights reserved. Crafted with ❤️ for innovation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
